@@ -5,7 +5,7 @@ import React from 'react';
 import { WithTranslation } from 'react-i18next';
 
 import Header from '../partials/Header';
-import { CTA } from './../../../reef/extension-ui/uik';
+import { CTA } from './../../../dust/extension-ui/uik';
 import ButtonArea from './ButtonArea';
 import translate from './translate';
 import VerticalSpace from './VerticalSpace';

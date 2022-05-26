@@ -12,7 +12,7 @@ import { AccountContext, ActionBar, ActionContext, ActionText, InputWithLabel, W
 import useTranslation from '../hooks/useTranslation';
 import { exportAccounts } from '../messaging';
 import { Header } from '../partials';
-import { CTA } from './../../../reef/extension-ui/uik';
+import { CTA } from './../../../dust/extension-ui/uik';
 
 const MIN_LENGTH = 6;
 

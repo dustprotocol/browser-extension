@@ -31,7 +31,7 @@ module.exports = (entry, alias = {}) => ({
         use: [
           {
             loader: require.resolve('babel-loader'),
-            options: require('@reef-defi/dev/config/babel-config-webpack.cjs')
+            options: require('@dust-defi/dev/config/babel-config-webpack.cjs')
           }
         ]
       },
@@ -92,7 +92,7 @@ module.exports = (entry, alias = {}) => ({
   resolve: {
     alias: packages.reduce((alias, p) => ({
       ...alias,
-      [`@reef-defi/${p}`]: path.resolve(__dirname, `../${p}/src`)
+      [`@dust-defi/${p}`]: path.resolve(__dirname, `../${p}/src`)
     }), {
       ...alias,
       'react/jsx-runtime': require.resolve('react/jsx-runtime')

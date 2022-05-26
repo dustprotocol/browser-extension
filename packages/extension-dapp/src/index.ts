@@ -1,10 +1,10 @@
 // Copyright 2019-2021 @polkadot/extension-dapp authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-import type { Injected, InjectedAccount, InjectedAccountWithMeta, InjectedExtension, InjectedExtensionInfo, InjectedProviderWithMeta, InjectedWindow, ProviderList, Unsubcall, Web3AccountsOptions } from '@reef-defi/extension-inject/types';
+import type { Injected, InjectedAccount, InjectedAccountWithMeta, InjectedExtension, InjectedExtensionInfo, InjectedProviderWithMeta, InjectedWindow, ProviderList, Unsubcall, Web3AccountsOptions } from '@dust-defi/extension-inject/types';
 
-import { u8aEq } from '@reef-defi/util';
-import { decodeAddress, encodeAddress } from '@reef-defi/util-crypto';
+import { u8aEq } from '@dust-defi/util';
+import { decodeAddress, encodeAddress } from '@dust-defi/util-crypto';
 
 import { documentReadyPromise } from './util';
 

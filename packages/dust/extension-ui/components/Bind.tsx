@@ -1,5 +1,5 @@
-import { appState, Components, hooks, ReefSigner } from '@reef-defi/react-lib';
-import { TxStatusUpdate } from '@reef-defi/react-lib/dist/utils';
+import { appState, Components, hooks, DustSigner } from '@dust-defi/react-lib';
+import { TxStatusUpdate } from '@dust-defi/react-lib/dist/utils';
 import React, { useEffect, useState } from 'react';
 
 import { SigningOrChildren } from './SigningOrChildren';
@@ -37,9 +37,9 @@ const onTxUpdate = (state: TxStatusUpdate) => {
 };
 
 export const Bind = (): JSX.Element => {
-  const accounts: ReefSigner[] | undefined = hooks.useObservableState(appState.signers$);
-  const selectedSigner: ReefSigner | undefined = hooks.useObservableState(appState.selectedSigner$);
-  const [bindSigner, setBindSigner] = useState<ReefSigner>();
+  const accounts: DustSigner[] | undefined = hooks.useObservableState(appState.signers$);
+  const selectedSigner: DustSigner | undefined = hooks.useObservableState(appState.selectedSigner$);
+  const [bindSigner, setBindSigner] = useState<DustSigner>();
   const theme = localStorage.getItem('theme');
 
   useEffect(() => {

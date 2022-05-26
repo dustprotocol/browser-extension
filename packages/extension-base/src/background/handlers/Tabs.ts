@@ -1,15 +1,15 @@
 // Copyright 2019-2021 @polkadot/extension authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-import type { InjectedAccount, InjectedMetadataKnown, MetadataDef, ProviderMeta } from '@reef-defi/extension-inject/types';
+import type { InjectedAccount, InjectedMetadataKnown, MetadataDef, ProviderMeta } from '@dust-defi/extension-inject/types';
 import type { KeyringPair } from '@polkadot/keyring/types';
 import type { JsonRpcResponse } from '@polkadot/rpc-provider/types';
 import type { SignerPayloadJSON, SignerPayloadRaw } from '@polkadot/types/types';
 import type { SubjectInfo } from '@polkadot/ui-keyring/observable/types';
 import type { MessageTypes, RequestAccountList, RequestAuthorizeTab, RequestRpcSend, RequestRpcSubscribe, RequestRpcUnsubscribe, RequestTypes, ResponseRpcListProviders, ResponseSigning, ResponseTypes, SubscriptionMessageTypes } from '../types';
 
-import { PHISHING_PAGE_REDIRECT } from '@reef-defi/extension-base/defaults';
-import { canDerive } from '@reef-defi/extension-base/utils';
+import { PHISHING_PAGE_REDIRECT } from '@dust-defi/extension-base/defaults';
+import { canDerive } from '@dust-defi/extension-base/utils';
 
 import { checkIfDenied } from '@polkadot/phishing';
 import keyring from '@polkadot/ui-keyring';

@@ -3,14 +3,14 @@
 
 // Runs in the extension background, handling all keyring access
 
-import type { RequestSignatures, TransportRequestMessage } from '@reef-defi/extension-base/background/types';
+import type { RequestSignatures, TransportRequestMessage } from '@dust-defi/extension-base/background/types';
 
-import handlers from '@reef-defi/extension-base/background/handlers';
-import { PORT_CONTENT, PORT_EXTENSION } from '@reef-defi/extension-base/defaults';
-import { AccountsStore } from '@reef-defi/extension-base/stores';
-import chrome from '@reef-defi/extension-inject/chrome';
-import { assert } from '@reef-defi/util';
-import { cryptoWaitReady } from '@reef-defi/util-crypto';
+import handlers from '@dust-defi/extension-base/background/handlers';
+import { PORT_CONTENT, PORT_EXTENSION } from '@dust-defi/extension-base/defaults';
+import { AccountsStore } from '@dust-defi/extension-base/stores';
+import chrome from '@dust-defi/extension-inject/chrome';
+import { assert } from '@dust-defi/util';
+import { cryptoWaitReady } from '@dust-defi/util-crypto';
 
 import keyring from '@polkadot/ui-keyring';
 

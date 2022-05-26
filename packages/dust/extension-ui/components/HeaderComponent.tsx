@@ -1,8 +1,8 @@
 
 import { faCog, faCoins, faExchangeAlt, faPaperPlane, faWallet } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ActionContext } from '@reef-defi/extension-ui/components';
-import { appState, hooks, ReefSigner, utils } from '@reef-defi/react-lib';
+import { ActionContext } from '@dust-defi/extension-ui/components';
+import { appState, hooks, DustSigner, utils } from '@dust-defi/react-lib';
 import React, { useCallback, useContext, useRef, useState } from 'react';
 import styled from 'styled-components';
 
@@ -15,7 +15,7 @@ interface NavHeaderComp {
 
 function NavHeaderComp (): React.ReactElement<NavHeaderComp> {
   const onAction = useContext(ActionContext);
-  const selectedAccount: ReefSigner|undefined = hooks.useObservableState(appState.selectedSigner$);
+  const selectedAccount: DustSigner|undefined = hooks.useObservableState(appState.selectedSigner$);
   const openRoute = useCallback(
     (path: string) => onAction(path),
     [onAction]
@@ -38,7 +38,7 @@ function NavHeaderComp (): React.ReactElement<NavHeaderComp> {
   const theme = localStorage.getItem('theme');
 
   return (<div className={theme === 'dark' ? 'navigation navigation--dark' : 'navigation'}>
-    <div className='reef-logo'>
+    <div className='dust-logo'>
       <svg
         enableBackground='new -466.4 720.2 144.6 73.3'
         version='1.1'
@@ -193,7 +193,7 @@ function NavHeaderComp (): React.ReactElement<NavHeaderComp> {
       </div>
       <div className='navigation__account-tokens'>
         <img src='https://s2.coinmarketcap.com/static/img/coins/64x64/6951.png' />
-        <div className='navigation__account-tokens-amount'>{selectedAccount ? utils.toReefBalanceDisplay(selectedAccount.balance).replace('-', '0.00').replace(' REEF', '') : ''}</div>
+        <div className='navigation__account-tokens-amount'>{selectedAccount ? utils.toDustBalanceDisplay(selectedAccount.balance).replace('-', '0.00').replace(' DUST', '') : ''}</div>
       </div>
     </button>
 

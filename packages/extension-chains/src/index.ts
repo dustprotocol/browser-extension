@@ -1,10 +1,10 @@
 // Copyright 2019-2021 @polkadot/extension-chains authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-import type { MetadataDef } from '@reef-defi/extension-inject/types';
+import type { MetadataDef } from '@dust-defi/extension-inject/types';
 import type { Chain } from './types';
 
-import { base64Decode } from '@reef-defi/util-crypto';
+import { base64Decode } from '@dust-defi/util-crypto';
 
 import { Metadata, TypeRegistry } from '@polkadot/types';
 

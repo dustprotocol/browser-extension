@@ -1,16 +1,16 @@
 {
   "author": "Reef Chain",
-  "bugs": "https://github.com/reef-defi/browser-extension/issues",
+  "bugs": "https://github.com/dustprotocol/browser-extension/issues",
   "contributors": [],
   "description": "Definitions for all known chains as exposed by the extension.",
-  "homepage": "https://github.com/reef-defi/browser-extension/tree/master/packages/extension-chains#readme",
+  "homepage": "https://github.com/dustprotocol/browser-extension/tree/master/packages/extension-chains#readme",
   "license": "Apache-2",
   "maintainers": [],
-  "name": "@reef-defi/extension-chains",
+  "name": "@dust-defi/extension-chains",
   "repository": {
     "directory": "packages/extension-chains",
     "type": "git",
-    "url": "https://github.com/reef-defi/browser-extension.git"
+    "url": "https://github.com/dustprotocol/browser-extension.git"
   },
   "sideEffects": false,
   "type": "module",
@@ -18,7 +18,7 @@
   "main": "index.js",
   "dependencies": {
     "@babel/runtime": "^7.16.0",
-    "@reef-defi/networks": "^7.8.2"
+    "@dust-defi/networks": "^7.8.2"
   },
   "peerDependencies": {
     "@polkadot/api": "*"

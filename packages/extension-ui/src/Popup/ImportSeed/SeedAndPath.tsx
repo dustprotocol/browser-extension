@@ -1,15 +1,15 @@
 // Copyright 2019-2021 @polkadot/extension-ui authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-import type { KeypairType } from '@reef-defi/util-crypto/types';
+import type { KeypairType } from '@dust-defi/util-crypto/types';
 import type { ThemeProps } from '../../types';
 import type { AccountInfo } from '.';
 
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { faCaretDown, faCaretRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { validateSeed } from '@reef-defi/extension-ui/messaging';
-import { objectSpread } from '@reef-defi/util';
+import { validateSeed } from '@dust-defi/extension-ui/messaging';
+import { objectSpread } from '@dust-defi/util';
 import React, { useCallback, useEffect, useState } from 'react';
 import styled from 'styled-components';
 

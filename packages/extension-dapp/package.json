@@ -1,16 +1,16 @@
 {
   "author": "Reef Chain",
-  "bugs": "https://github.com/reef-defi/browser-extension/issues",
+  "bugs": "https://github.com/dustprotocol/browser-extension/issues",
   "contributors": [],
   "description": "Provides an interfaces around the injected globals for ease of access by dapp developers.",
-  "homepage": "https://github.com/reef-defi/browser-extension/tree/master/packages/extension-dapp#readme",
+  "homepage": "https://github.com/dustprotocol/browser-extension/tree/master/packages/extension-dapp#readme",
   "license": "Apache-2",
   "maintainers": [],
-  "name": "@reef-defi/extension-dapp",
+  "name": "@dust-defi/extension-dapp",
   "repository": {
     "directory": "packages/extension-dapp",
     "type": "git",
-    "url": "https://github.com/reef-defi/browser-extension.git"
+    "url": "https://github.com/dustprotocol/browser-extension.git"
   },
   "sideEffects": false,
   "type": "module",
@@ -18,13 +18,13 @@
   "main": "index.js",
   "dependencies": {
     "@babel/runtime": "^7.16.0",
-    "@reef-defi/extension-inject": "^0.41.5",
-    "@reef-defi/util": "^7.8.2",
-    "@reef-defi/util-crypto": "^7.8.2"
+    "@dust-defi/extension-inject": "^0.41.5",
+    "@dust-defi/util": "^7.8.2",
+    "@dust-defi/util-crypto": "^7.8.2"
   },
   "peerDependencies": {
     "@polkadot/api": "*",
-    "@reef-defi/util": "*",
-    "@reef-defi/util-crypto": "*"
+    "@dust-defi/util": "*",
+    "@dust-defi/util-crypto": "*"
   }
 }

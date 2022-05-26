@@ -1,10 +1,10 @@
 // Copyright 2019-2021 @polkadot/extension-ui authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-import type { AccountJson } from '@reef-defi/extension-base/background/types';
+import type { AccountJson } from '@dust-defi/extension-base/background/types';
 
-import { canDerive } from '@reef-defi/extension-base/utils';
-import { ThemeProps } from '@reef-defi/extension-ui/types';
+import { canDerive } from '@dust-defi/extension-base/utils';
+import { ThemeProps } from '@dust-defi/extension-ui/types';
 import React, { useCallback, useMemo, useState } from 'react';
 import styled from 'styled-components';
 

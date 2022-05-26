@@ -3,7 +3,7 @@
 
 import type { MessageTypes, MessageTypesWithNoSubscriptions, MessageTypesWithNullRequest, MessageTypesWithSubscriptions, RequestTypes, ResponseTypes, SubscriptionMessageTypes, TransportRequestMessage, TransportResponseMessage } from '../background/types';
 
-import { PORT_PAGE } from '@reef-defi/extension-base/defaults';
+import { PORT_PAGE } from '@dust-defi/extension-base/defaults';
 
 import Injected from './Injected';
 

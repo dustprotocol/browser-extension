@@ -1,7 +1,7 @@
 // Copyright 2019-2021 @polkadot/extension-ui authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-import type { RequestAuthorizeTab } from '@reef-defi/extension-base/background/types';
+import type { RequestAuthorizeTab } from '@dust-defi/extension-base/background/types';
 import type { ThemeProps } from '../../types';
 
 import React, { useCallback, useContext } from 'react';

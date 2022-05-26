@@ -1,13 +1,13 @@
 // Copyright 2019-2021 @polkadot/extension authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-import type { KeyringPair } from '@reef-defi/keyring/types';
-import type { HexString } from '@reef-defi/util/types';
+import type { KeyringPair } from '@dust-defi/keyring/types';
+import type { HexString } from '@dust-defi/util/types';
 import type { SignerPayloadRaw } from '@polkadot/types/types';
 import type { RequestSign } from './types';
 
-import { wrapBytes } from '@reef-defi/extension-dapp/wrapBytes';
-import { u8aToHex } from '@reef-defi/util';
+import { wrapBytes } from '@dust-defi/extension-dapp/wrapBytes';
+import { u8aToHex } from '@dust-defi/util';
 
 import { TypeRegistry } from '@polkadot/types';
 

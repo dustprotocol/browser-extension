@@ -1,7 +1,7 @@
 // Copyright 2019-2021 @polkadot/extension authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-// const base = require("@reef-defi/dev/config/eslint.cjs");
+// const base = require("@dust-defi/dev/config/eslint.cjs");
 
 // module.exports = {
 //   root: true,
@@ -39,7 +39,7 @@
 
 
 
-// This code was copied from from @reef-defi/dev/config/eslint.cjs
+// This code was copied from from @dust-defi/dev/config/eslint.cjs
 // In addition ignorePatterns was added and parser options links to projects tsconfig.json
 // Added all previously named rules
 // * This is not the most optimal solution!

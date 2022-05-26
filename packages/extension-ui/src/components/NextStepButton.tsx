@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import styled from 'styled-components';
 
-import { CTA } from './../../../reef/extension-ui/uik';
+import { CTA } from './../../../dust/extension-ui/uik';
 
 type Props = React.ComponentProps<typeof CTA>;
 

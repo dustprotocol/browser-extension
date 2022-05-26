@@ -1,25 +1,25 @@
 // Copyright 2019-2021 @polkadot/extension-ui authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-import type { AccountJson, AccountsContext, AuthorizeRequest, MetadataRequest, SigningRequest } from '@reef-defi/extension-base/background/types';
+import type { AccountJson, AccountsContext, AuthorizeRequest, MetadataRequest, SigningRequest } from '@dust-defi/extension-base/background/types';
 import type { SettingsStruct } from '@polkadot/ui-settings/types';
 
-import { Provider } from '@reef-defi/evm-provider';
-import { PHISHING_PAGE_REDIRECT } from '@reef-defi/extension-base/defaults';
-import { canDerive } from '@reef-defi/extension-base/utils';
-import { appState, hooks } from '@reef-defi/react-lib';
+import { Provider } from '@dust-defi/evm-provider';
+import { PHISHING_PAGE_REDIRECT } from '@dust-defi/extension-base/defaults';
+import { canDerive } from '@dust-defi/extension-base/utils';
+import { appState, hooks } from '@dust-defi/react-lib';
 import React, { useCallback, useEffect, useState } from 'react';
 import { Route, Switch } from 'react-router';
 
 import uiSettings from '@polkadot/ui-settings';
 
-import { Bind } from '../../../reef/extension-ui/components/Bind';
-import { Dashboard } from '../../../reef/extension-ui/components/dashboard/Dashboard';
-import { HeaderComponent } from '../../../reef/extension-ui/components/HeaderComponent';
-import { Swap } from '../../../reef/extension-ui/components/Swap';
-import { Transfer } from '../../../reef/extension-ui/components/Transfer';
-import { useReefSigners } from '../../../reef/extension-ui/hooks/useReefSigners';
-import { innitialNetwork } from '../../../reef/extension-ui/state/environment';
+import { Bind } from '../../../dust/extension-ui/components/Bind';
+import { Dashboard } from '../../../dust/extension-ui/components/dashboard/Dashboard';
+import { HeaderComponent } from '../../../dust/extension-ui/components/HeaderComponent';
+import { Swap } from '../../../dust/extension-ui/components/Swap';
+import { Transfer } from '../../../dust/extension-ui/components/Transfer';
+import { useDustSigners } from '../../../dust/extension-ui/hooks/useDustSigners';
+import { innitialNetwork } from '../../../dust/extension-ui/state/environment';
 import { ErrorBoundary, Loading } from '../components';
 import { AccountContext, ActionContext, AuthorizeReqContext, MediaContext, MetadataReqContext, SettingsContext, SigningReqContext } from '../components/contexts';
 import ToastProvider from '../components/Toast/ToastProvider';
@@ -75,9 +75,9 @@ function initAccountContext (accounts: AccountJson[], selectedAccount: AccountJs
 export default function Popup (): React.ReactElement {
   const [accounts, setAccounts] = useState<null | AccountJson[]>(null);
   const provider: Provider|undefined = hooks.useObservableState(appState.currentProvider$);
-  const signers = useReefSigners(accounts, provider);
+  const signers = useDustSigners(accounts, provider);
 
-  hooks.useInitReefState('Reef Chain Extension', { network: innitialNetwork, signers });
+  hooks.useInitDustState('Dust Chain Extension', { network: innitialNetwork, signers });
   const [accountCtx, setAccountCtx] = useState<AccountsContext>({ accounts: [], hierarchy: [] });
   const [authRequests, setAuthRequests] = useState<null | AuthorizeRequest[]>(null);
   const [cameraOn, setCameraOn] = useState(startSettings.camera === 'on');

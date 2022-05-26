@@ -1,5 +1,5 @@
-import { SigningReqContext } from '@reef-defi/extension-ui/components';
-import Signing from '@reef-defi/extension-ui/Popup/Signing';
+import { SigningReqContext } from '@dust-defi/extension-ui/components';
+import Signing from '@dust-defi/extension-ui/Popup/Signing';
 import React, { useContext } from 'react';
 
 interface SigningOrComponent{

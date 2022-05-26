@@ -1,11 +1,11 @@
 // Copyright 2019-2021 @polkadot/extension-ui authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-import type { ResponseJsonGetAccountInfo } from '@reef-defi/extension-base/background/types';
-import type { KeyringPair$Json } from '@reef-defi/keyring/types';
+import type { ResponseJsonGetAccountInfo } from '@dust-defi/extension-base/background/types';
+import type { KeyringPair$Json } from '@dust-defi/keyring/types';
 import type { KeyringPairs$Json } from '@polkadot/ui-keyring/types';
 
-import { u8aToString } from '@reef-defi/util';
+import { u8aToString } from '@dust-defi/util';
 import React, { useCallback, useContext, useEffect, useState } from 'react';
 import styled from 'styled-components';
 

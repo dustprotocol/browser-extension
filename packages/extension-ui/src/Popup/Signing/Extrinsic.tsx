@@ -1,11 +1,11 @@
 // Copyright 2019-2021 @polkadot/extension-ui authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-import type { Chain } from '@reef-defi/extension-chains/types';
+import type { Chain } from '@dust-defi/extension-chains/types';
 import type { Call, ExtrinsicEra, ExtrinsicPayload } from '@polkadot/types/interfaces';
 import type { AnyJson, SignerPayloadJSON } from '@polkadot/types/types';
 
-import { bnToBn, formatNumber } from '@reef-defi/util';
+import { bnToBn, formatNumber } from '@dust-defi/util';
 import BN from 'bn.js';
 import { TFunction } from 'i18next';
 import React, { useMemo, useRef } from 'react';

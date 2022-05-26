@@ -1,3 +1,3 @@
-# @reef-defi/extension-ui
+# @dust-defi/extension-ui
 
-UI for the `@reef-defi/extension`
+UI for the `@dust-defi/extension`

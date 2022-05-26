@@ -1,12 +1,12 @@
 // Copyright 2019-2021 @polkadot/extension-ui authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-import type { AccountJson, RequestSign } from '@reef-defi/extension-base/background/types';
-import type { HexString } from '@reef-defi/util/types';
+import type { AccountJson, RequestSign } from '@dust-defi/extension-base/background/types';
+import type { HexString } from '@dust-defi/util/types';
 import type { ExtrinsicPayload } from '@polkadot/types/interfaces';
 import type { SignerPayloadJSON, SignerPayloadRaw } from '@polkadot/types/types';
 
-import { decodeAddress } from '@reef-defi/util-crypto';
+import { decodeAddress } from '@dust-defi/util-crypto';
 import React, { useCallback, useContext, useEffect, useState } from 'react';
 
 import { TypeRegistry } from '@polkadot/types';

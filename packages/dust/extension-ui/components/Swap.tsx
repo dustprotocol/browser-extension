@@ -1,14 +1,14 @@
-import { appState, Components, createEmptyTokenWithAmount, hooks, Network, ReefSigner, reefTokenWithAmount, Token } from '@reef-defi/react-lib';
+import { appState, Components, createEmptyTokenWithAmount, hooks, Network, DustSigner, dustTokenWithAmount, Token } from '@dust-defi/react-lib';
 import React from 'react';
 
 import { Loading } from '../uik';
 import { SigningOrChildren } from './SigningOrChildren';
 
-const REEF = reefTokenWithAmount();
+const DUST = dustTokenWithAmount();
 const NO_TKN = createEmptyTokenWithAmount();
 
 export const Swap = (): JSX.Element => {
-  const signer: ReefSigner | undefined = hooks.useObservableState(appState.selectedSigner$);
+  const signer: DustSigner | undefined = hooks.useObservableState(appState.selectedSigner$);
   const network: Network | undefined = hooks.useObservableState(appState.currentNetwork$);
   const availableTokens: Token[] | undefined = hooks.useObservableState(appState.allAvailableSignerTokens$);
   const theme = localStorage.getItem('theme');
@@ -22,7 +22,7 @@ export const Swap = (): JSX.Element => {
           account={signer}
           buyToken={NO_TKN}
           network={network}
-          sellToken={REEF}
+          sellToken={DUST}
           tokens={availableTokens}
         ></Components.SwapComponent></div>}
     </SigningOrChildren>

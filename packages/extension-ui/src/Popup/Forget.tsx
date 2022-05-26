@@ -11,7 +11,7 @@ import { ActionBar, ActionContext, ActionText, Address, Warning } from '../compo
 import useTranslation from '../hooks/useTranslation';
 import { forgetAccount } from '../messaging';
 import { Header } from '../partials';
-import { CTA } from './../../../reef/extension-ui/uik';
+import { CTA } from './../../../dust/extension-ui/uik';
 
 interface Props extends RouteComponentProps<{ address: string }>, ThemeProps {
   className?: string;

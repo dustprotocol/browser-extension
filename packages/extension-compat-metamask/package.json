@@ -1,16 +1,16 @@
 {
   "author": "Reef Chain",
-  "bugs": "https://github.com/reef-defi/browser-extension/issues",
+  "bugs": "https://github.com/dustprotocol/browser-extension/issues",
   "contributors": [],
   "description": "Metamask compatibility layer",
-  "homepage": "https://github.com/reef-defi/browser-extension/tree/master/packages/extension-compat-metamask#readme",
+  "homepage": "https://github.com/dustprotocol/browser-extension/tree/master/packages/extension-compat-metamask#readme",
   "license": "Apache-2",
   "maintainers": [],
-  "name": "@reef-defi/extension-compat-metamask",
+  "name": "@dust-defi/extension-compat-metamask",
   "repository": {
     "directory": "packages/extension-compat-metamask",
     "type": "git",
-    "url": "https://github.com/reef-defi/browser-extension.git"
+    "url": "https://github.com/dustprotocol/browser-extension.git"
   },
   "sideEffects": false,
   "type": "module",
@@ -19,11 +19,11 @@
   "dependencies": {
     "@babel/runtime": "^7.16.0",
     "@metamask/detect-provider": "^1.2.0",
-    "@reef-defi/extension-inject": "^0.41.5",
-    "@reef-defi/util": "^7.8.2",
+    "@dust-defi/extension-inject": "^0.41.5",
+    "@dust-defi/util": "^7.8.2",
     "web3": "^1.6.0"
   },
   "peerDependencies": {
-    "@reef-defi/util": "*"
+    "@dust-defi/util": "*"
   }
 }

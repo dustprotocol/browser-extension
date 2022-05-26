@@ -3,7 +3,7 @@
 
 import type { MessageTypes, TransportRequestMessage } from '../types';
 
-import { assert } from '@reef-defi/util';
+import { assert } from '@dust-defi/util';
 
 import { PORT_EXTENSION } from '../../defaults';
 import Extension from './Extension';

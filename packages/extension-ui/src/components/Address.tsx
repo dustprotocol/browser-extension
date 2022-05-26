@@ -1,8 +1,8 @@
 // Copyright 2019-2021 @polkadot/extension-ui authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-import type { AccountJson, AccountWithChildren } from '@reef-defi/extension-base/background/types';
-import type { Chain } from '@reef-defi/extension-chains/types';
+import type { AccountJson, AccountWithChildren } from '@dust-defi/extension-base/background/types';
+import type { Chain } from '@dust-defi/extension-chains/types';
 import type { IconTheme } from '@polkadot/react-identicon/types';
 import type { SettingsStruct } from '@polkadot/ui-settings/types';
 import type { KeypairType } from '@polkadot/util-crypto/types';
@@ -13,8 +13,8 @@ import { faUsb } from '@fortawesome/free-brands-svg-icons';
 import { faCopy, faEye, faEyeSlash } from '@fortawesome/free-regular-svg-icons';
 import { faCodeBranch, faEllipsisV, faQrcode } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Provider } from '@reef-defi/evm-provider';
-import { appState, hooks, ReefSigner, utils } from '@reef-defi/react-lib';
+import { Provider } from '@dust-defi/evm-provider';
+import { appState, hooks, DustSigner, utils } from '@dust-defi/react-lib';
 import React, { useCallback, useContext, useEffect, useRef, useState } from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import styled from 'styled-components';
@@ -27,8 +27,8 @@ import useTranslation from '../hooks/useTranslation';
 import { showAccount } from '../messaging';
 import { DEFAULT_TYPE } from '../util/defaultType';
 import getParentNameSuri from '../util/getParentNameSuri';
-import notify from './../../../reef/extension-ui/notify';
-import { Button, Loading } from './../../../reef/extension-ui/uik';
+import notify from './../../../dust/extension-ui/notify';
+import { Button, Loading } from './../../../dust/extension-ui/uik';
 import { AccountContext, ActionContext, SettingsContext, SigningReqContext } from './contexts';
 import Identicon from './Identicon';
 import Menu from './Menu';
@@ -49,7 +49,7 @@ export interface Props {
   type?: KeypairType;
   exporting?: any;
   presentation?: boolean;
-  signerProp?: ReefSigner;
+  signerProp?: DustSigner;
 }
 
 interface Recoded {
@@ -104,8 +104,8 @@ function Address ({ actions, address, children, className, exporting, genesisHas
   const { t } = useTranslation();
   const onAction = useContext(ActionContext);
   const { accounts } = useContext(AccountContext);
-  const selectedAccount: ReefSigner|undefined = hooks.useObservableState(appState.selectedSigner$);
-  const signers: ReefSigner[]|undefined = hooks.useObservableState(appState.signers$);
+  const selectedAccount: DustSigner|undefined = hooks.useObservableState(appState.selectedSigner$);
+  const signers: DustSigner[]|undefined = hooks.useObservableState(appState.signers$);
   const settings = useContext(SettingsContext);
   const [{ account, formatted, genesisHash: recodedGenesis, prefix, type }, setRecoded] = useState<Recoded>(defaultRecoded);
   const chain = useMetadata(genesisHash || recodedGenesis, true);
@@ -114,7 +114,7 @@ function Address ({ actions, address, children, className, exporting, genesisHas
   const [showActionsMenu, setShowActionsMenu] = useState(false);
   const [moveMenuUp, setIsMovedMenu] = useState(false);
   const actionsRef = useRef<HTMLDivElement>(null);
-  const [signer, setSigner] = useState<ReefSigner|undefined>(signerProp);
+  const [signer, setSigner] = useState<DustSigner|undefined>(signerProp);
 
   useEffect(() => {
     const foundSigner = signers?.find((s) => s.address === account?.address);
@@ -234,7 +234,7 @@ function Address ({ actions, address, children, className, exporting, genesisHas
   const Balance = () => {
     return (
       <>
-        <div>{ utils.toReefBalanceDisplay(signer?.balance).replace('-', '0.00').replace(' REEF', '') }</div>
+        <div>{ utils.toDustBalanceDisplay(signer?.balance).replace('-', '0.00').replace(' DUST', '') }</div>
       </>
     );
   };
@@ -356,10 +356,10 @@ function Address ({ actions, address, children, className, exporting, genesisHas
                 icon={faCopy as IconProp}
                 onClick={() => notify.info({
                   aliveFor: 2,
-                  message: 'Copied Reef Account Address to clipboard.'
+                  message: 'Copied Dust Account Address to clipboard.'
                 })}
                 size='sm'
-                title={t('Copy Reef Account Address')}
+                title={t('Copy Dust Account Address')}
               />
             </CopyToClipboard>
           </div>
@@ -372,7 +372,7 @@ function Address ({ actions, address, children, className, exporting, genesisHas
                     className='account-card__address'
                     title={signer?.evmAddress || ''}
                   >EVM Address: {utils.toAddressShortDisplay(signer?.evmAddress || '')}</div>
-                  <CopyToClipboard text={(signer?.evmAddress) ? `${signer.evmAddress}(ONLY for Reef chain!)` : ''}>
+                  <CopyToClipboard text={(signer?.evmAddress) ? `${signer.evmAddress}(ONLY for Dust chain!)` : ''}>
                     <FontAwesomeIcon
                       className='copyIcon'
                       icon={faCopy as IconProp}
@@ -382,7 +382,7 @@ function Address ({ actions, address, children, className, exporting, genesisHas
                           type='button'
                         />,
                         keepAlive: true,
-                        message: 'Copied to clipboard.\nDO NOT use this Reef EVM address on any other chain. ONLY use it on Reef chain.'
+                        message: 'Copied to clipboard.\nDO NOT use this Dust EVM address on any other chain. ONLY use it on Dust chain.'
                       })}
                       size='sm'
                       title={t('Copy Ethereum VM Address')}

@@ -1,9 +1,9 @@
 // Copyright 2019-2021 @polkadot/extension-ui authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-import { Ledger } from '@reef-defi/hw-ledger';
-import { Network } from '@reef-defi/networks/types';
-import { assert } from '@reef-defi/util';
+import { Ledger } from '@dust-defi/hw-ledger';
+import { Network } from '@dust-defi/networks/types';
+import { assert } from '@dust-defi/util';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import uiSettings from '@polkadot/ui-settings';

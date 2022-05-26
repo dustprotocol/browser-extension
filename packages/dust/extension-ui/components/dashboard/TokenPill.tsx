@@ -1,11 +1,11 @@
-import { TokenWithAmount, utils as reefUtils } from '@reef-defi/react-lib';
+import { TokenWithAmount, utils as dustUtils } from '@dust-defi/react-lib';
 import React from 'react';
 
 import { Card, UikText } from './../../uik';
 
-const { isDataSet } = reefUtils;
+const { isDataSet } = dustUtils;
 
-const { showBalance, toCurrencyFormat } = reefUtils;
+const { showBalance, toCurrencyFormat } = dustUtils;
 // const { Loading } = Components.Loading;
 
 const getBalance = (token: TokenWithAmount) => {

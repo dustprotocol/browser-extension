@@ -1,4 +1,4 @@
-import { TokenWithAmount, utils } from '@reef-defi/react-lib';
+import { TokenWithAmount, utils } from '@dust-defi/react-lib';
 import React from 'react';
 
 import { Loading, UikText } from './../../uik';

@@ -3,7 +3,7 @@
 
 import '../../../../__mocks__/chrome';
 
-import type { AccountJson } from '@reef-defi/extension-base/background/types';
+import type { AccountJson } from '@dust-defi/extension-base/background/types';
 import type { ReactWrapper } from 'enzyme';
 import type { IconTheme } from '@polkadot/react-identicon/types';
 import type { Props as AddressComponentProps } from './Address';
@@ -76,7 +76,7 @@ const accountsWithGenesisHash = [
     address: '5GYQRJj3NUznYDzCduENRcocMsyxmb6tjb5xW87ZMErBe9R7',
     expectedEncodedAddress: '5GYQRJj3NUznYDzCduENRcocMsyxmb6tjb5xW87ZMErBe9R7',
     expectedIconTheme: 'substrate',
-    expectedNetworkLabel: 'Reef Mainnet',
+    expectedNetworkLabel: 'Dust Mainnet',
     genesisHash: '0x7834781d38e4798d548e34ec947d19deea29df148a7bf32484b7b24dacf8d4b7',
     type: 'sr25519'
   }
@@ -154,7 +154,7 @@ const genericTestSuite = (account: AccountTestJson, withAccountsInContext = true
     });
 
     it('can copy its address', () => {
-      expect(wrapper.find('.account-card__meta title').first().text()).toEqual('Copy Reef Account Address');
+      expect(wrapper.find('.account-card__meta title').first().text()).toEqual('Copy Dust Account Address');
     });
 
     it('has the account visiblity icon', () => {

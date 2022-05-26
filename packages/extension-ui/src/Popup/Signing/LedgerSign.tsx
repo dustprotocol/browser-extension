@@ -1,7 +1,7 @@
 // Copyright 2019-2021 @polkadot/extension-ui authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-import type { HexString } from '@reef-defi/util/types';
+import type { HexString } from '@dust-defi/util/types';
 import type { ExtrinsicPayload } from '@polkadot/types/interfaces';
 
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
