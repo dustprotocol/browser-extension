@@ -14,12 +14,12 @@
   },
   "sideEffects": false,
   "type": "module",
-  "version": "0.41.2",
+  "version": "0.41.2-a",
   "dependencies": {
     "@babel/runtime": "^7.15.4",
-    "@dust-defi/extension-base": "^0.41.2",
-    "@dust-defi/extension-inject": "^0.41.2",
-    "@dust-defi/extension-ui": "^0.41.2"
+    "@dust-defi/extension-base": "0.41.2-a",
+    "@dust-defi/extension-inject": "0.41.2-a",
+    "@dust-defi/extension-ui": "0.41.2-a"
   },
   "devDependencies": {
     "@dust-defi/dev": "^0.63.19",

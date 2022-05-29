@@ -14,15 +14,15 @@
   },
   "sideEffects": false,
   "type": "module",
-  "version": "0.41.2",
+  "version": "0.41.2-a",
   "main": "index.js",
   "dependencies": {
     "@babel/runtime": "^7.15.4",
+    "@dust-defi/extension-dapp": "0.41.2-a",
+    "@dust-defi/extension-inject": "0.41.2-a",
     "@polkadot/api": "^6.7.1",
     "@polkadot/keyring": "^7.8.2",
     "@polkadot/phishing": "^0.6.407",
-    "@polkadot/ui-keyring": "^0.86.5",
-    "@dust-defi/extension-dapp": "^0.41.2",
-    "@dust-defi/extension-inject": "^0.41.2"
+    "@polkadot/ui-keyring": "^0.86.5"
   }
 }

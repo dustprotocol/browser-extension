@@ -14,13 +14,13 @@
   },
   "sideEffects": false,
   "type": "module",
-  "version": "0.41.2",
+  "version": "0.41.2-a",
   "main": "index.js",
   "dependencies": {
     "@babel/runtime": "^7.15.4",
+    "@dust-defi/extension-inject": "0.41.2-a",
     "@polkadot/util": "^7.8.2",
-    "@polkadot/util-crypto": "^7.8.2",
-    "@dust-defi/extension-inject": "^0.41.2"
+    "@polkadot/util-crypto": "^7.8.2"
   },
   "peerDependencies": {
     "@polkadot/api": "*",
