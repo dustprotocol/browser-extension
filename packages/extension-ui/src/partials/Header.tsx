@@ -94,7 +94,7 @@ function Header ({ children, className = '', onFilter, showAdd, showBackArrow, s
               />
             )
           }
-          <span className='logoText'>{text || 'reef-js'}</span>
+          <span className='logoText'>{text || 'dust-js'}</span>
         </div>
         {showSearch && (
           <div className={`searchBarWrapper ${isSearchOpen ? 'selected' : ''}`}>
@@ -197,7 +197,7 @@ export default React.memo(styled(Header)(({ theme }: Props) => `
     }
 
     .popupMenus, .searchBarWrapper {
-      align-self: center;     
+      align-self: center;
     }
 
     .searchBarWrapper {
@@ -208,21 +208,21 @@ export default React.memo(styled(Header)(({ theme }: Props) => `
 
       .searchIcon {
         margin-right: 8px;
-        
+
         &:hover {
           cursor: pointer;
         }
       }
     }
-  
+
     .popupToggle {
       display: inline-block;
       vertical-align: middle;
-  
+
       &:last-child {
         margin-right: 24px;
       }
-   
+
       &:hover {
         cursor: pointer;
       }
@@ -231,7 +231,7 @@ export default React.memo(styled(Header)(({ theme }: Props) => `
     .inputFilter {
       width: 100%
     }
-  
+
     .popupToggle+.popupToggle {
       margin-left: 8px;
     }

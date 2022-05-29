@@ -1,28 +1,28 @@
 {
   "author": "Reef Finance",
-  "bugs": "https://github.com/reef-defi/browser-extension/issues",
+  "bugs": "https://github.com/dustprotocol/browser-extension/issues",
   "contributors": [],
-  "description": "A sample signer extension for the @reef-defi/api",
-  "homepage": "https://github.com/reef-defi/browser-extension/tree/master/packages/extension#readme",
+  "description": "A sample signer extension for the @dust-defi/api",
+  "homepage": "https://github.com/dustprotocol/browser-extension/tree/master/packages/extension#readme",
   "license": "Apache-2",
   "maintainers": [],
-  "name": "@reef-defi/extension",
+  "name": "@dust-defi/extension",
   "repository": {
     "directory": "packages/extension",
     "type": "git",
-    "url": "https://github.com/reef-defi/browser-extension.git"
+    "url": "https://github.com/dustprotocol/browser-extension.git"
   },
   "sideEffects": false,
   "type": "module",
   "version": "0.41.2",
   "dependencies": {
     "@babel/runtime": "^7.15.4",
-    "@reef-defi/extension-base": "^0.41.2",
-    "@reef-defi/extension-inject": "^0.41.2",
-    "@reef-defi/extension-ui": "^0.41.2"
+    "@dust-defi/extension-base": "^0.41.2",
+    "@dust-defi/extension-inject": "^0.41.2",
+    "@dust-defi/extension-ui": "^0.41.2"
   },
   "devDependencies": {
-    "@reef-defi/dev": "^0.63.19",
+    "@dust-defi/dev": "^0.63.19",
     "babel-loader": "^8.2.3",
     "browser-resolve": "^2.0.0",
     "buffer": "^6.0.3",

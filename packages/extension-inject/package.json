@@ -1,16 +1,16 @@
 {
   "author": "Reef Finance",
-  "bugs": "https://github.com/reef-defi/browser-extension/issues",
+  "bugs": "https://github.com/dustprotocol/browser-extension/issues",
   "contributors": [],
   "description": "A generic injector (usable to any extension), that populates the base exposed interfaces to be used by dapps.",
-  "homepage": "https://github.com/reef-defi/browser-extension/tree/master/packages/extension-inject#readme",
+  "homepage": "https://github.com/dustprotocol/browser-extension/tree/master/packages/extension-inject#readme",
   "license": "Apache-2",
   "maintainers": [],
-  "name": "@reef-defi/extension-inject",
+  "name": "@dust-defi/extension-inject",
   "repository": {
     "directory": "packages/extension-inject",
     "type": "git",
-    "url": "https://github.com/reef-defi/browser-extension.git"
+    "url": "https://github.com/dustprotocol/browser-extension.git"
   },
   "sideEffects": false,
   "type": "module",

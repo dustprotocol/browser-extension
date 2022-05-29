@@ -1,7 +1,7 @@
 // Copyright 2019-2021 @polkadot/extension-ui authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-import { MetadataDef } from '@reef-defi/extension-inject/types';
+import { MetadataDef } from '@dust-defi/extension-inject/types';
 
 export const westendMetadata = {
   chain: 'Westend',

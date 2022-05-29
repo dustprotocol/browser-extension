@@ -1,22 +1,22 @@
 {
-  "extends": "@reef-defi/dev/config/tsconfig.json",
+  "extends": "@dust-defi/dev/config/tsconfig.json",
   "exclude": ["build/**/*", "**/build/*", "**/build/**/*"],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@reef-defi/extension": ["packages/extension/src"],
-      "@reef-defi/extension/*": ["packages/extension/src/*"],
-      "@reef-defi/extension-base": ["packages/extension-base/src"],
-      "@reef-defi/extension-base/*": ["packages/extension-base/src/*"],
-      "@reef-defi/extension-chains": ["packages/extension-chains/src"],
-      "@reef-defi/extension-chains/*": ["packages/extension-chains/src/*"],
-      "@reef-defi/extension-compat-metamask": ["packages/extension-compat-metamask/src"],
-      "@reef-defi/extension-dapp": ["packages/extension-dapp/src"],
-      "@reef-defi/extension-dapp/*": ["packages/extension-dapp/src/*"],
-      "@reef-defi/extension-inject": ["packages/extension-inject/src"],
-      "@reef-defi/extension-inject/*": ["packages/extension-inject/src/*"],
-      "@reef-defi/extension-ui": ["packages/extension-ui/src"],
-      "@reef-defi/extension-ui/*": ["packages/extension-ui/src/*"]
+      "@dust-defi/extension": ["packages/extension/src"],
+      "@dust-defi/extension/*": ["packages/extension/src/*"],
+      "@dust-defi/extension-base": ["packages/extension-base/src"],
+      "@dust-defi/extension-base/*": ["packages/extension-base/src/*"],
+      "@dust-defi/extension-chains": ["packages/extension-chains/src"],
+      "@dust-defi/extension-chains/*": ["packages/extension-chains/src/*"],
+      "@dust-defi/extension-compat-metamask": ["packages/extension-compat-metamask/src"],
+      "@dust-defi/extension-dapp": ["packages/extension-dapp/src"],
+      "@dust-defi/extension-dapp/*": ["packages/extension-dapp/src/*"],
+      "@dust-defi/extension-inject": ["packages/extension-inject/src"],
+      "@dust-defi/extension-inject/*": ["packages/extension-inject/src/*"],
+      "@dust-defi/extension-ui": ["packages/extension-ui/src"],
+      "@dust-defi/extension-ui/*": ["packages/extension-ui/src/*"]
     },
     "skipLibCheck": true
   }

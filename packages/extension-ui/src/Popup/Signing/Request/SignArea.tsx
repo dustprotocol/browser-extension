@@ -1,7 +1,7 @@
 // Copyright 2019-2021 @polkadot/extension-ui authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-import { PASSWORD_EXPIRY_MIN } from '@reef-defi/extension-base/defaults';
+import { PASSWORD_EXPIRY_MIN } from '@dust-defi/extension-base/defaults';
 import React, { useCallback, useContext, useEffect, useState } from 'react';
 import styled from 'styled-components';
 

@@ -3,8 +3,8 @@
 
 import type { ThemeProps } from '../../types';
 
-import { AccountWithChildren } from '@reef-defi/extension-base/background/types';
-import getNetworkMap from '@reef-defi/extension-ui/util/getNetworkMap';
+import { AccountWithChildren } from '@dust-defi/extension-base/background/types';
+import getNetworkMap from '@dust-defi/extension-ui/util/getNetworkMap';
 import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import styled from 'styled-components';
 

@@ -7,7 +7,7 @@ import type { AccountInfo } from '.';
 
 import { faCaretDown, faCaretRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { validateSeed } from '@reef-defi/extension-ui/messaging';
+import { validateSeed } from '@dust-defi/extension-ui/messaging';
 import React, { useCallback, useEffect, useState } from 'react';
 import styled from 'styled-components';
 

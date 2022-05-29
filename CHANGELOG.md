@@ -1,7 +1,7 @@
 # CHANGELOG
 
 ## 0.41.1 Nov 11, 2021
-- forked to `@reef-defi/extension`
+- forked to `@dust-defi/extension`
 
 # Polkadot.js extension changelog
 ## 0.41.1 Nov 8, 2021

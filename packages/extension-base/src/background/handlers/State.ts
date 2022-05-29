@@ -1,12 +1,12 @@
 // Copyright 2019-2021 @polkadot/extension-bg authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-import type { MetadataDef, ProviderMeta } from '@reef-defi/extension-inject/types';
+import type { MetadataDef, ProviderMeta } from '@dust-defi/extension-inject/types';
 import type { JsonRpcResponse, ProviderInterface, ProviderInterfaceCallback } from '@polkadot/rpc-provider/types';
 import type { AccountJson, AuthorizeRequest, MetadataRequest, RequestAuthorizeTab, RequestRpcSend, RequestRpcSubscribe, RequestRpcUnsubscribe, RequestSign, ResponseRpcListProviders, ResponseSigning, SigningRequest } from '../types';
 
-import { addMetadata, knownMetadata } from '@reef-defi/extension-chains';
-import chrome from '@reef-defi/extension-inject/chrome';
+import { addMetadata, knownMetadata } from '@dust-defi/extension-chains';
+import chrome from '@dust-defi/extension-inject/chrome';
 import { BehaviorSubject } from 'rxjs';
 
 import settings from '@polkadot/ui-settings';

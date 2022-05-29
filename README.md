@@ -1,8 +1,8 @@
-[![reef-defi](https://img.shields.io/badge/reef--defi-js-blueviolet)](https://docs.reef.finance/docs/developers/js_libraries/#reefjs)
+[![dust-defi](https://img.shields.io/badge/dust--defi-js-blueviolet)](https://docs.dust.llc/docs/developers/js_libraries/#dustjs)
 ![license](https://img.shields.io/badge/License-Apache%202.0-blue?logo=apache&style=flat-square)
-[![npm](https://img.shields.io/npm/v/@reef-defi/extension?logo=npm&style=flat-square)](https://www.npmjs.com/package/@reef-defi/extension)
+[![npm](https://img.shields.io/npm/v/@dust-defi/extension?logo=npm&style=flat-square)](https://www.npmjs.com/package/@dust-defi/extension)
 
-# reef.js extension
+# dust.js extension
 
 A very simple scaffolding browser extension that injects a [@polkadot/api](https://github.com/polkadot-js/api) Signer into a page, along with any associated accounts, allowing for use by any dapp. This is an extensible POC implementation of a Polkadot/Substrate browser signer.
 
@@ -32,9 +32,9 @@ Steps to build the extension and view your changes in a browser:
     - check "Enable add-on debugging"
     - click on "Load Temporary Add-on" and point to `packages/extension/build/manifest.json`
     - if developing, after making changes - reload the extension
-3. When visiting `console.reefscan.com` it will inject the extension
+3. When visiting `console.dustscan.com` it will inject the extension
 
-Once added, you can create an account (via a generated seed) or import via an existing seed. The [console UI](https://console.reefscan.com), when loaded, will show these accounts as `<account name> (extension)`
+Once added, you can create an account (via a generated seed) or import via an existing seed. The [console UI](https://console.dustscan.com), when loaded, will show these accounts as `<account name> (extension)`
 
 ## Development
 
@@ -57,9 +57,9 @@ This approach is used to support multiple external signers in for instance [apps
 
 The extension injection interfaces are generic, i.e. it is designed to allow any extension developer to easily inject extensions (that conforms to a specific interface) and at the same time, it allows for any dapp developer to easily enable the interfaces from multiple extensions at the same time. It is not an all-or-nothing approach, but rather it is an ecosystem where the user can choose which extensions fit their style best.
 
-From a dapp developer perspective, the only work needed is to include the [@reef-defi/extension-dapp](packages/extension-dapp/) package and call the appropriate enabling function to retrieve all the extensions and their associated interfaces.
+From a dapp developer perspective, the only work needed is to include the [@dust-defi/extension-dapp](packages/extension-dapp/) package and call the appropriate enabling function to retrieve all the extensions and their associated interfaces.
 
-From an extension developer perspective, the only work required is to enable the extension via the razor-thin [@reef-defi/extension-inject](packages/extension-inject/) wrapper. Any dapp using the above interfaces will have access to the extension via this interface.
+From an extension developer perspective, the only work required is to enable the extension via the razor-thin [@dust-defi/extension-inject](packages/extension-inject/) wrapper. Any dapp using the above interfaces will have access to the extension via this interface.
 
 When there is more than one extension, each will populate an entry via the injection interface and each will be made available to the dapp. The `Injected` interface, as returned via `enable`, contains the following information for any compliant extension -
 
@@ -100,15 +100,15 @@ interface Signer extends SignerInterface {
 
 ## Injection information
 
-The information contained in this section may change and evolve. It is therefore recommended that all access is done via the [@reef-defi/extension-dapp](packages/extension-dapp/) (for dapps) and [@reef-defi/extension-inject](packages/extension-inject/) (for extensions) packages, which removes the need to work with the lower-level targets.
+The information contained in this section may change and evolve. It is therefore recommended that all access is done via the [@dust-defi/extension-dapp](packages/extension-dapp/) (for dapps) and [@dust-defi/extension-inject](packages/extension-inject/) (for extensions) packages, which removes the need to work with the lower-level targets.
 
 The extension injects `injectedWeb3` into the global `window` object, exposing the following: (This is meant to be generic across extensions, allowing any dapp to utilize multiple signers, and pull accounts from multiples, as they are available.)
 
 ```js
 window.injectedWeb3 = {
   // this is the name for this extension, there could be multiples injected,
-  // each with their own keys, here `reef` is for this extension
-  'reef': {
+  // each with their own keys, here `dust` is for this extension
+  'dust': {
     // semver for the package
     version: '0.1.0',
 
@@ -129,7 +129,7 @@ window.injectedWeb3 = {
 
 ### Using the mnemonic and password from the extension
 
-When you create a keypair via the extension, it supplies a 12-word mnemonic seed and asks you to create a password. This password only encrypts the private key on disk so that the password is required to spend funds in `console.reefscan.com` or to import the account from backup. The password does not protect the mnemonic phrase. That is, if an attacker were to acquire the mnemonic phrase, they would be able to use it to spend funds without the password.
+When you create a keypair via the extension, it supplies a 12-word mnemonic seed and asks you to create a password. This password only encrypts the private key on disk so that the password is required to spend funds in `console.dustscan.com` or to import the account from backup. The password does not protect the mnemonic phrase. That is, if an attacker were to acquire the mnemonic phrase, they would be able to use it to spend funds without the password.
 
 ### Importing mnemonics from other key generation utilities
 

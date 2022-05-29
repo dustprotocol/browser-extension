@@ -3,8 +3,8 @@
 
 import type { ThemeProps } from '../../types';
 
-import { AuthUrlInfo, AuthUrls } from '@reef-defi/extension-base/background/handlers/State';
-import { InputFilter } from '@reef-defi/extension-ui/components';
+import { AuthUrlInfo, AuthUrls } from '@dust-defi/extension-base/background/handlers/State';
+import { InputFilter } from '@dust-defi/extension-ui/components';
 import React, { useCallback, useEffect, useState } from 'react';
 import styled from 'styled-components';
 

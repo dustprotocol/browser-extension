@@ -3,7 +3,7 @@
 
 import '../../../../../__mocks__/chrome';
 
-import type { AuthorizeRequest } from '@reef-defi/extension-base/background/types';
+import type { AuthorizeRequest } from '@dust-defi/extension-base/background/types';
 
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 import { configure, mount, ReactWrapper } from 'enzyme';

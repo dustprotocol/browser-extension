@@ -1,16 +1,16 @@
 {
   "author": "Reef Finance",
-  "bugs": "https://github.com/reef-defi/browser-extension/issues",
+  "bugs": "https://github.com/dustprotocol/browser-extension/issues",
   "contributors": [],
   "description": "Provides an interfaces around the injected globals for ease of access by dapp developers.",
-  "homepage": "https://github.com/reef-defi/browser-extension/tree/master/packages/extension-dapp#readme",
+  "homepage": "https://github.com/dustprotocol/browser-extension/tree/master/packages/extension-dapp#readme",
   "license": "Apache-2",
   "maintainers": [],
-  "name": "@reef-defi/extension-dapp",
+  "name": "@dust-defi/extension-dapp",
   "repository": {
     "directory": "packages/extension-dapp",
     "type": "git",
-    "url": "https://github.com/reef-defi/browser-extension.git"
+    "url": "https://github.com/dustprotocol/browser-extension.git"
   },
   "sideEffects": false,
   "type": "module",
@@ -20,7 +20,7 @@
     "@babel/runtime": "^7.15.4",
     "@polkadot/util": "^7.8.2",
     "@polkadot/util-crypto": "^7.8.2",
-    "@reef-defi/extension-inject": "^0.41.2"
+    "@dust-defi/extension-inject": "^0.41.2"
   },
   "peerDependencies": {
     "@polkadot/api": "*",

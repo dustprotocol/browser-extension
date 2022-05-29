@@ -2,10 +2,10 @@
 // SPDX-License-Identifier: Apache-2.0
 
 const ALLOWED_PATH = ['/', '/account/import-ledger', '/account/restore-json'] as const;
-const PORT_CONTENT = 'reef_content';
+const PORT_CONTENT = 'dust_content';
 const PHISHING_PAGE_REDIRECT = '/phishing-page-detected';
-const PORT_EXTENSION = 'reef_extension';
-const PORT_PAGE = 'reef_page';
+const PORT_EXTENSION = 'dust_extension';
+const PORT_PAGE = 'dust_page';
 const PASSWORD_EXPIRY_MIN = 15;
 const PASSWORD_EXPIRY_MS = PASSWORD_EXPIRY_MIN * 60 * 1000;
 
